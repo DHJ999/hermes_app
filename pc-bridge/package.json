@@ -1,0 +1,11 @@
+{
+  "name": "hermes-lan-bridge",
+  "version": "1.0.0",
+  "description": "把本机 Hermes 官方 dashboard 透传到局域网，手机可在同 WiFi 下操作 Hermes（零依赖反代）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "bridge": "node server.js"
+  },
+  "license": "MIT"
+}
