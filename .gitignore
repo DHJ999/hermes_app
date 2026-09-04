@@ -50,5 +50,8 @@ android/local.properties
 # pc-bridge runtime logs (may contain IPs / debug paths)
 pc-bridge/*.log
 
+# Local build log
+/build_log.txt
+
 # Output artifacts
 outputs/
