@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://hermes-agent.nousresearch.com"><img src="https://img.shields.io/badge/Hermes_Agent-7C3AED" alt="Hermes Agent"></a>
   <a href="https://github.com/DHJ999/hermes_app/releases"><img src="https://img.shields.io/github/v/release/DHJ999/hermes_app?label=%E7%89%88%E6%9C%AC&color=7C3AED" alt="GitHub 版本"></a>
-  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=%E8%AE%B8%E5%8F%AF%E8%AF%81&message=MIT&color=green" alt="MIT 许可证"></a>
+  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=%E8%AE%B8%E5%8F%AF%E8%AF%81&message=BUSL-1.1&color=orange" alt="BUSL-1.1 商用需授权"></a>
   <br>
   <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter"></a>
   <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js"></a>
@@ -95,6 +95,10 @@ netsh advfirewall firewall add rule name="hermes-lan-bridge" dir=in action=allow
 - 务必设置 `-Token`；未鉴权的局域网访问等于把 Hermes 交到同网段任何人手里。
 - 需要**远程**访问时，用 **Tailscale** 组虚拟内网，比暴露端口安全得多。
 - 会话令牌只在 loopback 有效；反代改写了 `Host`，外部拿不到令牌直打后端。
+
+## 📜 许可协议
+
+本项目采用 **Business Source License 1.1（BUSL-1.1）**：任何人可免费查看、修改并**非商用**使用；**任何商业用途需联系作者（DHJ999）另行获取书面商业授权**。该许可将于 **2030-09-04** 自动转为 Apache License 2.0。详见 [LICENSE](LICENSE)。
 
 ## 📚 相关文档
 

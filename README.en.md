@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://hermes-agent.nousresearch.com"><img src="https://img.shields.io/badge/Hermes_Agent-7C3AED" alt="Hermes Agent"></a>
   <a href="https://github.com/DHJ999/hermes_app/releases"><img src="https://img.shields.io/github/v/release/DHJ999/hermes_app?label=Release&color=7C3AED" alt="GitHub Release"></a>
-  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=License&message=MIT&color=green" alt="MIT License"></a>
+  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=License&message=BUSL-1.1&color=orange" alt="BUSL-1.1, commercial use requires a license"></a>
   <br>
   <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter"></a>
   <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js"></a>
@@ -95,6 +95,10 @@ The proxy supports plain HTTP, SSE streaming and WebSocket upgrades.
 - Set a `-Token`; unauthenticated LAN access lets anyone control your Hermes.
 - For remote access, put the phone and PC on a **Tailscale** mesh instead of exposing a port.
 - The session token only works from loopback; the proxy rewrites `Host`, so outsiders can't steal the token to hit the backend directly.
+
+## 📜 License
+
+This project is licensed under the **Business Source License 1.1 (BUSL-1.1)**: everyone may freely view, modify, and use it for **non-commercial** purposes; **any commercial use requires a separate written commercial license from the author (DHJ999)**. On **2030-09-04** the license automatically converts to the Apache License 2.0. See [LICENSE](LICENSE).
 
 ## 📚 Related docs
 
