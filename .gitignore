@@ -55,3 +55,6 @@ pc-bridge/*.log
 
 # Output artifacts
 outputs/
+
+# Flutter tool state
+.flutter_tool_state
