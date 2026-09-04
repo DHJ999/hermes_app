@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://hermes-agent.nousresearch.com"><img src="https://img.shields.io/badge/Hermes_Agent-7C3AED" alt="Hermes Agent"></a>
   <a href="https://github.com/DHJ999/hermes_app/releases"><img src="https://img.shields.io/github/v/release/DHJ999/hermes_app?label=Release&color=7C3AED" alt="GitHub Release"></a>
-  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=License&message=BUSL-1.1&color=orange" alt="BUSL-1.1, commercial use requires a license"></a>
+  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=License&message=PolyForm%20Noncommercial&color=orange" alt="PolyForm Noncommercial, commercial use requires permission"></a>
   <br>
   <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter"></a>
   <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js"></a>
@@ -98,7 +98,7 @@ The proxy supports plain HTTP, SSE streaming and WebSocket upgrades.
 
 ## 📜 License
 
-This project is licensed under the **Business Source License 1.1 (BUSL-1.1)**: everyone may freely view, modify, and use it for **non-commercial** purposes; **any commercial use requires a separate written commercial license from the author (DHJ999)**. On **2030-09-04** the license automatically converts to the Apache License 2.0. See [LICENSE](LICENSE).
+This project is licensed under the **PolyForm Noncommercial License 1.0.0**: free to use, modify and distribute for **noncommercial purposes** (personal research, study, hobbies, charitable/educational/scientific organizations, etc.); **any commercial use is outside the scope of this license and requires prior written permission from the author (DHJ999)**. Full terms in [LICENSE](LICENSE).
 
 ## 📚 Related docs
 

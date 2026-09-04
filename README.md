@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://hermes-agent.nousresearch.com"><img src="https://img.shields.io/badge/Hermes_Agent-7C3AED" alt="Hermes Agent"></a>
   <a href="https://github.com/DHJ999/hermes_app/releases"><img src="https://img.shields.io/github/v/release/DHJ999/hermes_app?label=%E7%89%88%E6%9C%AC&color=7C3AED" alt="GitHub 版本"></a>
-  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=%E8%AE%B8%E5%8F%AF%E8%AF%81&message=BUSL-1.1&color=orange" alt="BUSL-1.1 商用需授权"></a>
+  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=%E8%AE%B8%E5%8F%AF%E8%AF%81&message=PolyForm%20Noncommercial&color=orange" alt="PolyForm Noncommercial，商用需授权"></a>
   <br>
   <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter"></a>
   <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js"></a>
@@ -98,7 +98,7 @@ netsh advfirewall firewall add rule name="hermes-lan-bridge" dir=in action=allow
 
 ## 📜 许可协议
 
-本项目采用 **Business Source License 1.1（BUSL-1.1）**：任何人可免费查看、修改并**非商用**使用；**任何商业用途需联系作者（DHJ999）另行获取书面商业授权**。该许可将于 **2030-09-04** 自动转为 Apache License 2.0。详见 [LICENSE](LICENSE)。
+本项目采用 **PolyForm Noncommercial License 1.0.0**：允许**非商业目的**（个人研究、学习、兴趣爱好、公益/教育/科研机构等）自由使用、修改与分发；**商业使用不在许可范围内，需先联系作者（DHJ999）获得书面授权**。完整条款见 [LICENSE](LICENSE)。
 
 ## 📚 相关文档
 
