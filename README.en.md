@@ -4,9 +4,19 @@
 
 [🌐 Switch to Chinese / 切换至中文](README.md)
 
+<p align="center">
+  <a href="https://hermes-agent.nousresearch.com"><img src="https://img.shields.io/badge/Hermes_Agent-7C3AED" alt="Hermes Agent"></a>
+  <a href="https://github.com/DHJ999/hermes_app/releases"><img src="https://img.shields.io/github/v/release/DHJ999/hermes_app?label=Release&color=7C3AED" alt="GitHub Release"></a>
+  <a href="https://github.com/DHJ999/hermes_app/blob/main/LICENSE"><img src="https://img.shields.io/github/license/DHJ999/hermes_app?label=License" alt="MIT License"></a>
+  <br>
+  <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter"></a>
+  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js"></a>
+  <a href="https://developer.android.com"><img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white" alt="Android"></a>
+</p>
+
 ---
 
-## What is this?
+## 🧩 What is this?
 
 Hermes Agent's web dashboard only listens on `127.0.0.1`, so a phone can't reach it directly. This repository ships the two pieces that fix that:
 
@@ -15,7 +25,7 @@ Hermes Agent's web dashboard only listens on `127.0.0.1`, so a phone can't reach
 | **pc-bridge** | `pc-bridge/` | Zero-dependency Node reverse proxy (`server.js`) that exposes the local dashboard to the LAN on `0.0.0.0:8787`, plus a one-click launcher (`start.ps1`) that starts the dashboard, opens firewall port 8787 and starts the proxy |
 | **hermes_app** | Flutter app in repo root | A WebView shell that wraps the Hermes dashboard into a near-native Android app: configurable address + access token, back-button inside web history, keyboard/scroll fixes, forced Simplified Chinese, a friendly offline page |
 
-## Architecture
+## 🏗 Architecture
 
 ```
 Phone (browser or shell app) ──WiFi──> PC 0.0.0.0:8787 (pc-bridge reverse proxy)
@@ -27,9 +37,9 @@ Phone (browser or shell app) ──WiFi──> PC 0.0.0.0:8787 (pc-bridge revers
 
 The proxy rewrites the `Host`/`Origin` headers back to loopback so the dashboard's domain check is satisfied. Session tokens are passed through live on every request — no config changes needed after restarting Hermes.
 
-## Quick start
+## 🚀 Quick start
 
-### 1. On the PC (run as admin — the script self-elevates for the firewall rule)
+### 🖥️ 1. On the PC (run as admin — the script self-elevates for the firewall rule)
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File E:\Code\hermes_app\pc-bridge\start.ps1
@@ -43,7 +53,7 @@ powershell -ExecutionPolicy Bypass -File E:\Code\hermes_app\pc-bridge\start.ps1 
 
 The script prints the LAN URL, e.g. `http://192.168.10.4:8787/?token=your-passphrase`. See `pc-bridge/README.md` for details.
 
-### 2. On the phone — same WiFi, then either
+### 📱 2. On the phone — same WiFi, then either
 
 - Open the printed URL in a browser and use "Add to Home Screen", or
 - Install the companion shell app:
@@ -56,7 +66,7 @@ flutter build apk --debug
 
 In the app, tap the settings icon and fill in: server address `http://<PC-LAN-IP>:8787` and the access token (leave blank if not set).
 
-### Manual start (without start.ps1)
+### 🔧 Manual start (without start.ps1)
 
 ```powershell
 # 1) Start the dashboard (local only)
@@ -67,7 +77,7 @@ node E:\Code\hermes_app\pc-bridge\server.js
 netsh advfirewall firewall add rule name="hermes-lan-bridge" dir=in action=allow protocol=TCP localport=8787 profile=private
 ```
 
-## Proxy configuration (env vars, all optional)
+## ⚙️ Proxy configuration (env vars, all optional)
 
 | Variable | Default | Purpose |
 |---|---|---|
@@ -79,14 +89,14 @@ netsh advfirewall firewall add rule name="hermes-lan-bridge" dir=in action=allow
 
 The proxy supports plain HTTP, SSE streaming and WebSocket upgrades.
 
-## Security notes
+## 🔒 Security notes
 
 - **LAN / same-WiFi only.** Don't port-forward it to the public internet.
 - Set a `-Token`; unauthenticated LAN access lets anyone control your Hermes.
 - For remote access, put the phone and PC on a **Tailscale** mesh instead of exposing a port.
 - The session token only works from loopback; the proxy rewrites `Host`, so outsiders can't steal the token to hit the backend directly.
 
-## Related docs
+## 📚 Related docs
 
 - `pc-bridge/README.md` — detailed Chinese guide for the bridge (incl. troubleshooting)
 - `lib/main.dart` — single-file Flutter shell app source
